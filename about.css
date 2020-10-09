@@ -1,0 +1,70 @@
+.intro {
+  min-height: 90vh;
+  justify-content: flex-start;
+  padding-top: 4vh;
+}
+
+.intro img {
+  border-radius: 25px;
+  height: 300px;
+  width: 300px;
+}
+
+.github {
+  display: flex;
+  flex-direction: row;
+}
+
+github-name:visited { text-decoration: none; color:#f73859; }
+github-name:hover { text-decoration: none; color:#f73859; }
+github-name:focus { text-decoration: none; color:#f73859; }
+github-name:hover, a:active { text-decoration: none; color:#f73859 }
+
+
+.github-name {
+  font-size: 30px;
+  color: black;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  margin-bottom: 2.5vh;
+  letter-spacing: 5px;
+
+  text-decoration: none;
+  text-decoration-color: #f73859;
+
+  display: flex;
+  flex-direction: column;
+  margin-left: 4vh;
+}
+
+.name-link {
+  color: #f73859;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: .5em 0;
+    padding: 0;
+}
+
+.bio {
+  /* width: 15%; */
+  font-size: 16px;
+  color: black;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0px;
+  text-overflow:ellipsis;
+  letter-spacing: 3px;
+}
+
+.crypto-bio {
+  background-color: rgb(237, 237, 237, .8);
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 3vh;
+  width: 50%;
+}

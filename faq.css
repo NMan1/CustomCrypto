@@ -1,0 +1,111 @@
+.faq_question {
+    margin: 0px;
+    padding: 0px 0px 5px 0px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq_answer_container {
+    height: 0px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.intro-container {
+  max-height: 90vh !important;
+}
+
+.intro-new {
+  min-height: 90vh;
+}
+
+.intro-container {
+  padding-top: 7vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.intro {
+  min-height: 90vh;
+}
+
+.intro-container {
+  max-height: 10vh;
+}
+
+.question {
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #f73859; /* Will override color (regardless of order) */
+  letter-spacing: 3px;
+  font-weight: 1000;
+  text-decoration: none;
+  text-align: center;
+}
+
+.awnser {
+  width: 50%;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  text-align: center;
+  background-color: rgb(237, 237, 237, .6);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.cars-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1F2124;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  border-radius: 10px;
+  max-width: 25%;
+  padding: 15px 30px 30px 30px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  margin-right: 5vh;
+}
+
+.title {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.cars-container a:link {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #f73859;
+}
+
+.cars-container a:hover {
+ border-bottom-color: #f73859;
+}
+
+@media screen and (max-width:1024px) {
+.intro-new {
+  overflow-y: scroll;
+}
+
+.cars-container {
+  flex-direction: column;
+}
+
+.card {
+  max-width: 80%;
+  margin-bottom: 4vh;
+  margin-right: 0;
+}
+}

@@ -1,0 +1,28 @@
+main {
+  min-height: calc(100vh - 8vh - 8vh);
+}
+
+body {
+  overflow:hidden;
+}
+
+#privacy-policy {
+  width: 50%;
+  height: 60vh;
+  overflow-y: scroll;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+#privacy-policy p {
+  font-size: 12px;
+}
+
+h3, h1, h2 {
+  font-size: 30px;
+  color: hsl(0 0% 93%);
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}

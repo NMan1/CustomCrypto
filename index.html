@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Custom Crypto</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" href="content\logo\logo-trans.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
+</head>
+
+<body background="content/background/background.jpg" bgproperties="fixed" class="body-no-scroll">
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=-a0rhxgV4tNxOzAX3nBnswbpE"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
+  </script>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="content\logo\logo-trans.png" alt="">
+        <h4>Custom Crypto</h4>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/prices">Prices</a>
+        </li>
+        <li>
+          <a href="/security">Security</a>
+        </li>
+        <li>
+          <a href="/faq">Faq</a>
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <span id="intro-title-1">Create your custom vanity address</span>
+      <span id="intro-title-2">Get started below</span>
+      <!-- <span id="generated-info">Addresses Generated: 389</span> -->
+      <form id="vanity-input">
+        <input id="given-vanity" type="input" placeholder="Custom Word" oninput="validateGiven(this); generateAddress();" autocomplete="off">
+        <input type="submit" id="generate-button" value="Generate">
+      </form>
+      <input id="gen-add" readonly type="input" placeholder="Generated Address">
+      <form id="vanity-price">
+        <input id="gen-price-btc" readonly type="input" placeholder="Price BTC">
+        <input id="gen-price-usd" readonly type="input" placeholder="Price USD">
+      </form>
+      <div class="case-sensitive-container">
+        <div> <input id="option-one" name="radio" value="one" onchange="generateAddress();" checked="checked" type="radio" class="case-1"> <label for="option-one"> <span></span>Case Sensitive</label> </div>
+        <div style="margin-left:2vh;"> <input id="option-two" onchange="generateAddress();" name="radio" value="two" type="radio" class="case-2"><label for="option-two"> <span></span>Ignore Case</label> </div>
+      </div>
+      <span class="illegal-chars hidden">Illegal characters entered!<br>(O,l,0 or I)</span>
+
+    </section>
+
+    <section class="intro-3 hidden">
+      <span id="intro3-title-1">Thank you </span>
+      <span id="intro-title-2-2">Your almost done</span>
+    </section>
+
+    <section class="intro-2">
+      <span id="intro-title-1" class="succsess-purchase">Finalize Your Order</span>
+      <span id="intro-title-2-2" class="succsess-purchase-2">Your almost done</span>
+
+      <div class="container">
+        <div class="purchase-product">
+          <input id="gen-add" class="gen-purchase" readonly type="input" placeholder="Generated Address">
+          <form id="vanity-price" class="vanity-purchase">
+            <input id="gen-price-btc" class="gen-purchase-btc" readonly type="input" placeholder="Price BTC">
+            <input id="gen-price-usd" class="gen-purchase-usd" readonly type="input" placeholder="Price USD">
+          </form>
+          <input id="gen-add" class="gen-purchase delivery-time" readonly type="input" placeholder="Expected Delivery Time: ">
+          <input id="gen-add" class="gen-purchase send-email" type="input" placeholder="Secure Delivery Email">
+          <input id="gen-add" class="gen-purchase send-email-confirm" type="input" placeholder="Confirm Delivery Email">
+          <div class="order-issue hidden" style="text-align: center;">Issue with your order?<br>Do not hesitate to contact us <br><a href = "mailto: support@customcrypto.xyz">support@customcrypto.xyz</a></div>
+          <input type="submit" id="generate-button" class="place-order-btn" value="Place Order">
+        </div>
+        <div id="paypal-button-container"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2020 Custom Crypto</span>
+    <span><a href="/privacy-policy">Privacy Policy</a></span>
+    <img src="content\logo\logo-trans.png" alt="">
+    <span><a href="/security">Security</a></span>
+    <span><a href = "mailto: support@customcrypto.xyz">support@customcrypto.xyz</a></span>
+  </footer>
+
+  <script src="https://www.paypal.com/sdk/js?client-id=AXur0k6CdWEQ5FQ0siorw8_ZCn5nswbpE&currency=USD" data-sdk-integration-source="button-factory"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="gen.js"></script>
+</body>
+
+</html>
